@@ -50,7 +50,7 @@ int	ft_strlen(char *str)
 char	*rev_print(char *str)
 {
 	int	i;
-	
+
 	i = ft_strlen(str);
 	while (i-- > 0)
 		write(1, &str[i], 1);

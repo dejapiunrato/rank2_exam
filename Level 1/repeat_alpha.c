@@ -50,7 +50,7 @@ int	main(int argc, char **argv)
 			{
 				j = argv[1][i] - 'a' + 1;
 				while (j--)
-					ft_putchr(argv[1][i]);				
+					ft_putchr(argv[1][i]);
 			}
 			else
 				ft_putchr(argv[1][i]);
