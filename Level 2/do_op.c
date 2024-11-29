@@ -58,7 +58,7 @@ void do_op(char *s1, char op, char *s2)
 int  main(int argc, char **argv)
 {
   if (argc == 4)
-    do_op(argv[1], argv[2], argv[3]);
+    do_op(argv[1], argv[2][0], argv[3]);
   write(1, "\n", 1);
   return (0);
 }
