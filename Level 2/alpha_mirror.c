@@ -28,14 +28,7 @@ $
 $>
 */
 
-char  ft_mirror(char c)
-{
-  if (c >= 'A' && c <= 'Z')
-    c = 'Z' - (c - 'A');
-  if (c >= 'a' && c <= 'z')
-    c = 'z' - (c - 'a');
-  return (c);
-}
+#include <unistd.h>
 
 int  main(int argc, char **argv)
 {
