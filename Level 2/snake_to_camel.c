@@ -33,13 +33,12 @@ int  main(int argc, char **argv)
   {
     while (argv[1][i])
     {
-      if (argv[1][i + 1] >= 'A' || argv[1][i + 1] <= 'Z')
+      if (argv[1][i] >= 'A' || argv[1][i] <= 'Z')
       {
         write(1, "_", 1);
-        argv[1][i + 1] = argv[1][i] - ('a' - 'A');
+        argv[1][i] = argv[1][i] - ('a' - 'A');
       }
-      else
-        write(1, &argv[1][i], 1);
+      write(1, &argv[1][i], 1);
       i++;
     }
   }
