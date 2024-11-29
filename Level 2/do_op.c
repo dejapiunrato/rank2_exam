@@ -52,7 +52,7 @@ int do_op(char *s1, char op, char *s2)
     result = num1 / num2;
   else if (op == '%')
     result = num1 % num2;
-  printf("%d", result);
+  return (result);
 }
 
 int  main(int argc, char **argv)
