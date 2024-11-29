@@ -42,15 +42,15 @@ void do_op(char *s1, char op, char *s2)
   num1 = atoi(s1);
   num2 = atoi(s2);
 
-  if (op = '+')
+  if (op == '+')
     result = num1 + num2;
-  else if (op = '-')
+  else if (op == '-')
     result = num1 - num2;
-  else if (op = '*')
+  else if (op == '*')
     result = num1 * num2;
-  else if (op = '/')
+  else if (op == '/')
     result = num1 / num2;
-  else if (op = '%')
+  else if (op == '%')
     result = num1 % num2;
   printf("%d", result);
 }
