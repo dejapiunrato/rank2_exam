@@ -1,5 +1,5 @@
 /*
-  Assignment name  : do_op
+Assignment name  : do_op
 Expected files   : *.c, *.h
 Allowed functions: atoi, printf, write
 --------------------------------------------------------------------------------
@@ -33,33 +33,32 @@ $
 #include <stdlib.h>
 #include <stdio.h>
 
-int do_op(char *s1, char op, char *s2)
+int	do_op(char *s1, char op, char *s2)
 {
-  int  num1;
-  int  num2;
-  int  result;
+	int	num1;
+	int	num2;
+	int	result;
 
-  num1 = atoi(s1);
-  num2 = atoi(s2);
-
-  if (op == '+')
-    result = num1 + num2;
-  else if (op == '-')
-    result = num1 - num2;
-  else if (op == '*')
-    result = num1 * num2;
-  else if (op == '/')
-    result = num1 / num2;
-  else if (op == '%')
-    result = num1 % num2;
-  return (result);
+	num1 = atoi(s1);
+	num2 = atoi(s2);
+	if (op == '+')
+		result = num1 + num2;
+	else if (op == '-')
+		result = num1 - num2;
+	else if (op == '*')
+		result = num1 * num2;
+	else if (op == '/')
+		result = num1 / num2;
+	else if (op == '%')
+		result = num1 % num2;
+	return (result);
 }
 
-int  main(int argc, char **argv)
+int	main(int argc, char **argv)
 {
-  if (argc == 4)
-    printf("%d\n", do_op(argv[1], argv[2][0], argv[3]));
-  else
-    write(1, "\n", 1);
-  return (0);
+	if (argc == 4)
+		printf("%d\n", do_op(argv[1], argv[2][0], argv[3]));
+	else
+		write(1, "\n", 1);
+	return (0);
 }
