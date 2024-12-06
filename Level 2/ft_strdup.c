@@ -28,23 +28,14 @@ size_t	ft_strlen(char *str)
 char	*ft_strdup(char *src)
 {
 	char	*dup;
-    int		i;
+	char	*aux;
 
-	dup = malloc(sizeof(char) * ft_strlen(src));
+	dup = malloc(ft_strlen(src) + 1);
 	if (!dup)
 		return (NULL);
-	i = 0;
-	while (src[i++])
-		dup[i] = src[i];
-	return (dup);
-}
-
-int	main(int argc, char **argv)
-{
-	if (argc == 2)
-	{
-		printf("%s\n", ft_strdup(argv[1]));
-		printf("%s\n", strdup(argv[1]));
-	}
-	return (0);
+	aux = dup;
+	while (*src)
+		*dup++ = *src++;
+	*dup = '\0';
+	return (aux);
 }
