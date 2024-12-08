@@ -16,10 +16,10 @@ size_t	ft_strspn(const char *s, const char *accept);
 #include <stdio.h>
 #include <string.h>
 
-size_t ft_strspn(const char *s, const char *accept)
+size_t	ft_strspn(const char *s, const char *accept)
 {
-	size_t  i;
-	size_t  j;
+	size_t	i;
+	size_t	j;
 
 	i = 0;
 	while (s[i])

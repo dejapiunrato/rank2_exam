@@ -32,5 +32,5 @@ char	*ft_strrev(char *str)
 		str[j - 1 - i] = tmp;
 		i++;
 	}
-	return (str);	
+	return (str);
 }
